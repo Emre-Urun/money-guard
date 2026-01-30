@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import DashboardPage from "./pages/DashboardPage";
 import CurrencyPage from "./pages/CurrencyPage";
@@ -16,8 +16,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/currency" element={<CurrencyPage />} />
-        <Route path="*" element={<LoginPage />} />{" "}
-        {/* Yanlış adrese gideni Login'e at */}
+
+        <Route path="*" element={<LoginPage />} />
       </Routes>
       <Loader />
     </div>
